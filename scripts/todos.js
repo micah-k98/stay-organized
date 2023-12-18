@@ -56,6 +56,11 @@ function displayTask(task) {
     if (task.completed == true) card.getElementById("status").innerText = "✔";
     else if (task.completed == false) card.getElementById("status").innerText = "❌"
 
+    const seeDetailsButton = card.getElementById("seeDetailsButton");
+            seeDetailsButton.addEventListener("click", () => {
+                location.href = `/details.html?id=${task.id}`;
+            })
+
     allTasksContainer.appendChild(card);
 }
 

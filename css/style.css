@@ -1,4 +1,10 @@
-.card-body {
+#toDoTaskTemplate .card-body {
     display: flex;
     justify-content: space-between;
+}
+
+#isCompleted {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
