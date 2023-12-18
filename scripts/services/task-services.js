@@ -19,4 +19,8 @@ class TaskServices {
 
         return fetch(`${this.baseUrl}todos`, requestInfo).then(response => response.json());
     }
+
+    async getTask(id) {
+        return fetch(`${this.baseUrl}todos/${id}`).then(response => response.json());
+    }
 }
