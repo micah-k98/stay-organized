@@ -53,6 +53,8 @@ function displayTask(task) {
     // card.getElementById("category").innerText = task.category;
     card.getElementById("desc").innerText = task.description;
     card.getElementById("deadline").innerText = task.deadline;
+    if (task.completed == true) card.getElementById("status").innerText = "✔";
+    else if (task.completed == false) card.getElementById("status").innerText = "❌"
 
     allTasksContainer.appendChild(card);
 }
