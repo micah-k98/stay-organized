@@ -1,4 +1,4 @@
-#toDoTaskTemplate .card-body {
+#bodyDetails {
     display: flex;
     justify-content: space-between;
 }

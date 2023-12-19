@@ -23,4 +23,14 @@ class TaskServices {
     async getTask(id) {
         return fetch(`${this.baseUrl}todos/${id}`).then(response => response.json());
     }
+
+    async changeCompletedStatus(id, details) {
+        const requestInfo = {
+            method: "PUT",
+            body: JSON.stringify(details),
+            headers: {"Content-type": "application/json;charset=UTF-8"}
+        }
+        
+        fetch (`${this.baseUrl}todos/${id}`, requestInfo).then(response => response.json());
+    }
 }

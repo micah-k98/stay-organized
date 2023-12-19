@@ -19,11 +19,11 @@
             <div id="isCompleted">
                 <h5 class="me-2">Completed? </h5>
                 <div class="form-check me-3">
-                    <input type="checkbox" class="form-check-input" id="yes">
+                    <input type="radio" class="form-check-input" id="yes" name="isCompletedRadio">
                     <label for="yes" class="form-check-label">Yes</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="no">
+                    <input type="radio" class="form-check-input" id="no" name="isCompletedRadio">
                     <label for="no" class="form-check-label">No</label>
                 </div>
             </div>
@@ -45,6 +45,9 @@
                     <p class="ms-3" id="deadline">2023-12-18</p>
                 </div>
             </section>
+            <div class="m-3">
+                <button class="btn btn-dark col-2 p-2 m-3" id="saveButton">Save</button>
+            </div>
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
